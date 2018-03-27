@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Brew Klan</title>
+		<link rel="stylesheet" href="css/brewklan.css" rel='stylesheet' type='text/css' />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="css/lightslider.css" rel='stylesheet' type='text/css' />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class = "header" id = "section-1">
+			<div class = "headerLogo">
+				<div class = "logo">
+				<img src="images/icons/logo.png">
+				</div>
+				<div class = "mobileContact">
+					<img src="images/icons/ic_phone_in_talk_black_24px.svg">
+					<p>+421 904 193 646</p>
+				</div>
+			</div>
+			<div class = "headerMenu">
+				<ul class = "navMenu">
+						<li>
+							<a onclick="section(1)">Domov</a>
+						</li>						
+						<li>
+							<a onclick="section(2)">O nás</a>
+						</li>
+						<li>
+							<a onclick="section(3)">Pivovar</a>
+						</li>
+						<li>
+							<a onclick="section(4)">Naše pivá</a>
+						</li>
+						<li>
+							<a onclick="section(4)">Kontakt</a>
+						</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about" id = "section-2">
+			<div class = "aboutContent">
+				<img src="images/about.png">
+				<p>To najlepšie <br>čo v pive máme</p>
+				<a onclick="section(3)">O pivovare</a>
+			</div>
+			<div class = "bottle">
+				<img src="images/bottle.png">
+			</div>
+		</div>
+		<div class="pivovar" id = "section-3">
+			<div class = "pivovarContent">
+				<img src="images/sudy.png">
+			</div>
+			<div class = "pivovarText">
+				<h2>Domáca pivovar <br>v malebnej obci Kolačkov.</h2>
+				<div class = "divider"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<a>Kontaktujte nás</a>
+			</div>
+		</div>
+		<div class = "pivovarGallery" id = "section-4">
+			<h2>Pivovár Brew klan</h2>
+			<div class = "divider"></div>
+			<div class = "galeriaContent">
+				<div class = "galleryTypes" >
+					<div class = "galleryType" onclick="openHalaModal()">
+						<img src="images/1.png">
+						<div class = "galleryHover">
+							<p>Zo skladu</p>
+						</div>
+					</div>
+
+					<div class = "galleryType"  onclick="openVyrobaModal()">
+						<img src="images/2.png">
+						<div class = "galleryHover">
+							<p>Z výroby</p>
+						</div>
+					</div>
+					<div class = "galleryType" onclick="openAkcieModal()">
+						<img src="images/3.png">
+						<div class = "galleryHover">
+							<p>Z akcií</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class= "pivovarItems" id = "section-5">
+			<h2>Ponuka Brew klan</h2>
+			<div class = "itemsHolder">
+				<div class = "pivovarItem">
+					<img src="images/item1.png">
+					<p class = "brewklan">BREW KLAN</p>
+					<p class = "itemName">SVETLÝ LEŽIAK 10%</p>
+					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+				</div>
+				<div class = "pivovarItem">
+					<img src="images/item2.png">
+					<p class = "brewklan">BREW KLAN</p>
+					<p class = "itemName">SVETLÝ LEŽIAK 12%</p>
+					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+				</div>
+				<div class = "pivovarItem">
+					<img src="images/item3.png">
+					<p class = "brewklan">BREW KLAN</p>
+					<p class = "itemName">NEPASTERIZOVANÝ ŠPECIÁL</p>
+					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+				</div>
+			</div>
+		</div>
+		<div class = "footer" id = "section-6">
+			<div class = "footerContent">
+				<div class = "footerItem">
+					<h3>Kontakt</h3>
+					<p>BREW KLAN Kolačkov </p>
+					<p>Kolačkov 138, </p>
+					<p>065 11 Kolačkov</p>
+					<p>Slovenská republika</p>
+					<p style="margin-top: 35px;">Tel: <strong>+421 904 193 646</strong></p>
+					<p><strong>+421 910 333 585</strong></p>
+					<p style="margin-bottom: 70px;">E-Mail: <strong>stamatinvest@stamatinvest.sk</strong></p>
+				</div>
+				<div class = "footerItem">
+					<h3>Sociálne siete</h3>
+					<p>Sledujte nás na sociálnych sieťach,<br>kde nájdete všetky informácie.</p>
+					<a style="margin-left: 80px;position: relative;top: 30px;" target="_blank" href="https://www.facebook.com/Kamenn%C3%BD-dvor-Kola%C4%8Dkov-298351843587310/"><i class="fa fa-facebook fa-2x" style="color:#a08c68"></i></a>
+				</div>
+				<div class = "footerItem" >
+					<div class = "footerLogo">
+						<img src="images/icons/footerlogo.png">
+					</div>
+					<div class = "footerEU">
+						<img src="images/icons/eu.png">
+					</div>
+					<p class="thanksEU">TENTO PRODUKT SA REALIZOVAL<BR> S PODPOROU EURÓPSKEJ ÚNIE.</p>
+				</div>
+			</div>
+		</div>
+
+
+	<script src="js/brewklan.js"></script>
+	<script src="js/lightslider.js"></script>
+	</body>
+</html> 
