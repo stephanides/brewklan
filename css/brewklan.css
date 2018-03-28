@@ -13,6 +13,15 @@ input {
     -webkit-appearance: none;
 }
 
+/*Hide in Desktop*/
+#menuMobile{display: none;}
+#menuMobileIcon{display: none;}
+#closeMenuMobileIcon{display: none;}
+.hideDesktop{display: none;}
+
+
+
+
 .header{max-width: 1170px; width: 1170px;margin-left: 50%;transform: translateX(-50%);}
 .header .headerLogo{height: 152px;display: flex;}
 .header .headerLogo .logo{height: 100%;width: 210px;left: 50%;transform: translateX(-50%);position: relative;}
@@ -35,7 +44,7 @@ input {
 .pivovar h2{font-family: 'Montserrat', serif;font-weight: bold;color: #533b22;font-size: 38px;margin: 0;margin-left: 60px;}
 .pivovar p{font-family: 'Montserrat', serif;font-weight: 500;color: #a08c68;font-size: 16px;margin: 0;margin-left: 60px;}
 .pivovar .divider{border: solid 2px #a08c68;width: 300px;position: relative;left: -150px;margin-top: 25px;margin-bottom: 25px;}
-.pivovar a{font-family: 'Montserrat', serif;font-weight: 400;color:#533b22;text-transform: uppercase;border: solid 2px;cursor: pointer;height: 50px;width: 200px;font-size: 16px;position: absolute;margin-left: 60px;bottom: 10px;line-height: 50px;text-align: center;}
+.pivovar a{font-family: 'Montserrat', serif;font-weight: 400;color:#533b22;text-transform: uppercase;border: solid 2px;cursor: pointer;height: 50px;width: 200px;font-size: 16px;position: absolute;margin-left: 60px;bottom: 0px;line-height: 50px;text-align: center;}
 .pivovar a:hover{background-color: #a08c68;color: white;}
 .pivovarGallery{max-width: 1170px; width: 1170px;margin-left: 50%;transform: translateX(-50%);}
 .pivovarGallery h2{font-family: 'Montserrat', serif;font-weight: bold;color: #533b22;font-size: 38px;margin: 0;margin-top: 140px;text-align: center;}
@@ -66,3 +75,183 @@ input {
 .footer .footerEU{margin-top: 25px;}
 .footer .footerEU img{margin-left: 50%;transform: translateX(-50%);}
 .footer .footerItem .thanksEU{color: white;text-decoration: underline;margin-top: 20px;font-size: 16px;text-align: center;margin-left: 0;}
+
+/*Media Query*/
+@media (min-width: 1025px) and (max-width: 1169px) {
+	.header{width: 1000px;}
+	.about{width: 1000px;}
+	.about .aboutContent img{width: 1000px;}
+	.pivovar{width: 1000px;}
+	.pivovar h2{font-size: 34px;}
+	.pivovar p{font-size: 14px;}
+	.pivovarGallery{width: 1000px;}
+	.galleryTypes .galleryType{width: 33.333%;}
+	.galleryTypes .galleryType img{width: 100%;}
+	.galleryTypes .galleryHover{width: 333.333px;}
+	.footer{width: 1000px;}
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  .hideDesktop{display: block;}
+	.header{width: 100vw;position: fixed;top: 0;z-index: 20;background-color: #fefcf7;margin: 0;transform: none;}
+	.header .headerLogo{height: 130px;}
+	.header .headerLogo .logo{width: 180px;left: 15px;transform: none;}
+	.header .headerLogo .logo img{width: 100%;}
+	.header .headerLogo .mobileContact{display: none;}
+	.header .headerMenu{display: none;}
+	#menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 70px;height: 70px;}
+  	#menuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 70px;height: 70px;}
+  	#closeMenuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#menuMobile{display:block;height: calc(100vh - 80px);position: fixed;top:-200vh;width: 100vw;background-color: #a08c68;margin-top: 130px;transition: top .5s ease-out;}
+  	#menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  	#menuMobile li{padding-top: 20px;}
+  	#menuMobile li a{color: #533b22;font-family: 'Montserrat';font-size: 48px;}
+  	.about{margin-top: 80px;width: 100vw;}
+  	.about .bottle{display: none;}
+  	.about .aboutContent img{left: -340px;position: relative;}
+  	.about .aboutContent p{margin-left: 30px;font-size: 48px;top: 50%;transform: translateY(-100%);}
+  	.about .aboutContent a{margin-left: 30px;transform: none;    top: calc(50% + 20px);height: 70px;width: 250px;font-size: 26px;line-height: 70px;}
+  	.about .aboutContent a:hover{background-color: transparent;border-color:white;color: white;}
+  	.pivovar{display: block;width: 100vw;    margin-top: 50px;}
+  	.pivovar img{width: 100%;}
+  	.pivovarText h2{margin-left: 30px;margin-top: 20px;font-size: 48px;}
+  	.pivovar .divider{    width: calc(100vw - 45px);margin-left: 30px;left: 0;border:solid 3px #a08c68;}
+  	.pivovar p{    width: calc(100vw - 35px);margin-left: 30px;font-size: 24px;}
+  	.pivovar a{margin-left: 15px;bottom: none;margin-top: 20px;bottom: auto;height: 70px;line-height: 70px;width: 300px;font-size: 26px;}
+  	.pivovarGallery h2{font-size: 42px;}
+  	.pivovarGallery{width: 100vw;}
+  	.galleryTypes{display: block;}
+  	.galleryTypes .galleryHover{opacity: 0.5;width: 100%;}
+  	.galleryTypes .galleryType {display: flex;width: 70%;margin-left: 50%;transform: translateX(-50%);}
+  	.galleryType img{width: 100%;}
+  	.pivovarItems{width: 100vw;}
+  	.pivovarItems h2{font-size: 42px;margin-top: 60px;}
+  	.pivovarItems .itemsHolder{display: block;margin-top: 60px;}
+  	.pivovarItems .itemsHolder .pivovarItem{width: 100%;margin-top: 60px;}
+  	.footer{width: 100vw;margin-top: 50px;}
+  	.footer .footerContent{display: block;overflow: auto;}
+  	.footer .footerItem{width: 100%;}
+  	.footer .footerItem h3{margin-left: 30px;font-size: 42px;}
+  	.footer .footerItem p{margin-left: 30px;font-size: 22px;}
+  	.footer .footerItem a{margin-left: 30px !important;font-size: 22px;}
+  	.footer .footerItem .thanksEU{margin-bottom: 70px;}
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+.hideDesktop{display: block;}
+	.header{width: 100vw;position: fixed;top: 0;z-index: 20;background-color: #fefcf7;margin: 0;transform: none;}
+	.header .headerLogo{height: 80px;}
+	.header .headerLogo .logo{width: 120px;left: 15px;transform: none;}
+	.header .headerLogo .logo img{width: 100%;}
+	.header .headerLogo .mobileContact{display: none;}
+	.header .headerMenu{display: none;}
+	#menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  	#menuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  	#closeMenuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#menuMobile{display:block;height: calc(100vh - 80px);position: fixed;top:-200vh;width: 100vw;background-color: #a08c68;margin-top: 80px;transition: top .5s ease-out;}
+  	#menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  	#menuMobile li{padding-top: 20px;}
+  	#menuMobile li a{color: #533b22;font-family: 'Montserrat';font-size: 32px;}
+  	.about{margin-top: 80px;width: 100vw;}
+  	.about .bottle{display: none;}
+  	.about .aboutContent img{left: -340px;position: relative;}
+  	.about .aboutContent p{margin-left: 15px;font-size: 36px;top: 50%;transform: translateY(-100%);}
+  	.about .aboutContent a{margin-left: 15px;transform: none;    top: calc(50% + 20px);}
+  	.about .aboutContent a:hover{background-color: transparent;border-color:white;color: white;}
+  	.pivovar{display: block;width: 100vw;    margin-top: 50px;}
+  	.pivovar img{width: 100%;}
+  	.pivovarText h2{margin-left: 15px;margin-top: 20px;}
+  	.pivovar .divider{    width: calc(100vw - 45px);margin-left: 15px;left: 0;}
+  	.pivovar p{    width: calc(100vw - 35px);margin-left: 15px;}
+  	.pivovar a{margin-left: 15px;bottom: none;margin-top: 20px;bottom: auto;}
+  	.pivovarGallery h2{font-size: 32px;}
+  	.pivovarGallery{width: 100vw;}
+  	.galleryTypes{display: block;}
+  	.galleryTypes .galleryHover{opacity: 0.5;width: 100%;}
+  	.galleryType img{width: 100%;}
+  	.pivovarItems{width: 100vw;}
+  	.pivovarItems h2{font-size: 32px;margin-top: 60px;}
+  	.pivovarItems .itemsHolder{display: block;margin-top: 60px;}
+  	.pivovarItems .itemsHolder .pivovarItem{width: 100%;margin-top: 60px;}
+  	.footer{width: 100vw;margin-top: 50px;}
+  	.footer .footerContent{display: block;overflow: auto;}
+  	.footer .footerItem{width: 100%;}
+  	.footer .footerItem h3{margin-left: 15px;}
+  	.footer .footerItem p{margin-left: 15px;font-size: 16px;}
+  	.footer .footerItem a{margin-left: 15px !important;}
+  	.footer .footerItem .thanksEU{margin-bottom: 70px;}
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.hideDesktop{display: block;}
+	.header{width: 100vw;position: fixed;top: 0;z-index: 20;background-color: #fefcf7;margin: 0;transform: none;}
+	.header .headerLogo{height: 80px;}
+	.header .headerLogo .logo{width: 120px;left: 15px;transform: none;}
+	.header .headerLogo .logo img{width: 100%;}
+	.header .headerLogo .mobileContact{display: none;}
+	.header .headerMenu{display: none;}
+	#menuMobileIcon{display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  	#menuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#closeMenuMobileIcon{position: absolute;top: 50%;transform: translateY(-50%);right: 20px;width: 50px;height: 50px;}
+  	#closeMenuMobileIcon img{width: 100%;filter: invert(0.37) sepia(1) brightness(0.9);}
+  	#menuMobile{display:block;height: calc(100vh - 80px);position: fixed;top:-200vh;width: 100vw;background-color: #a08c68;margin-top: 80px;transition: top .5s ease-out;}
+  	#menuMobile .navMenuMobile{margin: 0;padding: 0;text-align: center;}
+  	#menuMobile li{padding-top: 20px;}
+  	#menuMobile li a{color: #533b22;font-family: 'Montserrat';font-size: 32px;}
+  	.about{margin-top: 80px;width: 100vw;}
+  	.about .bottle{display: none;}
+  	.about .aboutContent img{left: -340px;position: relative;}
+  	.about .aboutContent p{margin-left: 15px;font-size: 36px;top: 50%;transform: translateY(-100%);}
+  	.about .aboutContent a{margin-left: 15px;transform: none;    top: calc(50% + 20px);}
+  	.about .aboutContent a:hover{background-color: transparent;border-color:white;color: white;}
+  	.pivovar{display: block;width: 100vw;    margin-top: 50px;}
+  	.pivovar img{width: 100%;}
+  	.pivovarText h2{margin-left: 15px;margin-top: 20px;}
+  	.pivovar .divider{    width: calc(100vw - 45px);margin-left: 15px;left: 0;}
+  	.pivovar p{    width: calc(100vw - 35px);margin-left: 15px;}
+  	.pivovar a{margin-left: 15px;bottom: none;margin-top: 20px;bottom: auto;}
+  	.pivovarGallery h2{font-size: 32px;}
+  	.pivovarGallery{width: 100vw;}
+  	.galleryTypes{display: block;}
+  	.galleryTypes .galleryHover{opacity: 0.5;width: 100%;}
+  	.galleryType img{width: 100%;}
+  	.pivovarItems{width: 100vw;}
+  	.pivovarItems h2{font-size: 32px;margin-top: 60px;}
+  	.pivovarItems .itemsHolder{display: block;margin-top: 60px;}
+  	.pivovarItems .itemsHolder .pivovarItem{width: 100%;margin-top: 60px;}
+  	.footer{width: 100vw;margin-top: 50px;}
+  	.footer .footerContent{display: block;overflow: auto;}
+  	.footer .footerItem{width: 100%;}
+  	.footer .footerItem h3{margin-left: 15px;}
+  	.footer .footerItem p{margin-left: 15px;font-size: 16px;}
+  	.footer .footerItem a{margin-left: 15px !important;}
+  	.footer .footerItem .thanksEU{margin-bottom: 70px;}
+}

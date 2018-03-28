@@ -27,6 +27,12 @@
 					<img src="images/icons/ic_phone_in_talk_black_24px.svg">
 					<p>+421 904 193 646</p>
 				</div>
+				<a id = "menuMobileIcon" onclick = "showMenuMobile()">
+					<img src="images/icons/ic_menu_black_24px.svg">
+				</a>
+				<a id = "closeMenuMobileIcon" onclick = "hideMenuMobile()">
+					<img src="images/icons/ic_close_black_24px.svg">
+				</a>
 			</div>
 			<div class = "headerMenu">
 				<ul class = "navMenu">
@@ -43,12 +49,13 @@
 							<a onclick="section(4)">Naše pivá</a>
 						</li>
 						<li>
-							<a onclick="section(4)">Kontakt</a>
+							<a onclick="section(5)">Kontakt</a>
 						</li>
 				</ul>
 			</div>
+		
 		</div>
-		<div class="about" id = "section-2">
+		<div class="about" id = "section-1">
 			<div class = "aboutContent">
 				<img src="images/about.png">
 				<p>To najlepšie <br>čo v pive máme</p>
@@ -58,19 +65,19 @@
 				<img src="images/bottle.png">
 			</div>
 		</div>
-		<div class="pivovar" id = "section-3">
+		<div class="pivovar" id = "section-2">
 			<div class = "pivovarContent">
 				<img src="images/sudy.png">
 			</div>
 			<div class = "pivovarText">
-				<h2>Domáca pivovar <br>v malebnej obci Kolačkov.</h2>
+				<h2>Domáci pivovar <br>z kráľovského mesta.</h2>
 				<div class = "divider"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a>Kontaktujte nás</a>
+				<a onclick="section(5)">Kontaktujte nás</a>
 			</div>
 		</div>
-		<div class = "pivovarGallery" id = "section-4">
-			<h2>Pivovár Brew klan</h2>
+		<div class = "pivovarGallery" id = "section-3">
+			<h2>Pivovár <br class = "hideDesktop">Brew klan</h2>
 			<div class = "divider"></div>
 			<div class = "galeriaContent">
 				<div class = "galleryTypes" >
@@ -96,8 +103,8 @@
 				</div>
 			</div>
 		</div>
-		<div class= "pivovarItems" id = "section-5">
-			<h2>Ponuka Brew klan</h2>
+		<div class= "pivovarItems" id = "section-4">
+			<h2>Ponuka <br class = "hideDesktop">Brew klan</h2>
 			<div class = "itemsHolder">
 				<div class = "pivovarItem">
 					<img src="images/item1.png">
@@ -119,17 +126,16 @@
 				</div>
 			</div>
 		</div>
-		<div class = "footer" id = "section-6">
+		<div class = "footer" id = "section-5">
 			<div class = "footerContent">
 				<div class = "footerItem">
 					<h3>Kontakt</h3>
-					<p>BREW KLAN Kolačkov </p>
-					<p>Kolačkov 138, </p>
-					<p>065 11 Kolačkov</p>
+					<p>MALT BJ s.r.o</p>
+					<p>J. Grešáka 22, </p>
+					<p>085 01 Bardejov</p>
 					<p>Slovenská republika</p>
-					<p style="margin-top: 35px;">Tel: <strong>+421 904 193 646</strong></p>
-					<p><strong>+421 910 333 585</strong></p>
-					<p style="margin-bottom: 70px;">E-Mail: <strong>stamatinvest@stamatinvest.sk</strong></p>
+					<p style="margin-top: 35px;">Tel: <strong>+421 908 994 098</strong></p>
+					<p style="margin-bottom: 70px;">E-Mail: <strong>maltbjsro@gmail.com</strong></p>
 				</div>
 				<div class = "footerItem">
 					<h3>Sociálne siete</h3>
@@ -148,6 +154,25 @@
 			</div>
 		</div>
 
+		<div id = "menuMobile">
+			<ul class = "navMenuMobile">
+					<li>
+						<a onclick="sectionMobile(1)">Domov</a>
+					</li>						
+					<li>
+						<a onclick="sectionMobile(2)">O nás</a>
+					</li>
+					<li>
+						<a onclick="sectionMobile(3)">Pivovar</a>
+					</li>
+					<li>
+						<a onclick="sectionMobile(4)">Naše pivá</a>
+					</li>
+					<li>
+						<a onclick="sectionMobile(5)">Kontakt</a>
+					</li>
+			</ul>
+		</div>
 
 	<script src="js/brewklan.js"></script>
 	<script src="js/lightslider.js"></script>
