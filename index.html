@@ -18,162 +18,180 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div class = "header" id = "section-1">
-			<div class = "headerLogo">
-				<div class = "logo">
-				<img src="images/icons/logo.png">
+		<div id = "wrapper">
+			<div class = "header" id = "section-1">
+				<div class = "headerLogo">
+					<div class = "logo">
+					<img src="images/icons/logo.png">
+					</div>
+					<div class = "mobileContact">
+						<img src="images/icons/ic_phone_in_talk_black_24px.svg">
+						<p>+421 904 193 646</p>
+					</div>
+					<a id = "menuMobileIcon" onclick = "showMenuMobile()">
+						<img src="images/icons/ic_menu_black_24px.svg">
+					</a>
+					<a id = "closeMenuMobileIcon" onclick = "hideMenuMobile()">
+						<img src="images/icons/ic_close_black_24px.svg">
+					</a>
 				</div>
-				<div class = "mobileContact">
-					<img src="images/icons/ic_phone_in_talk_black_24px.svg">
-					<p>+421 904 193 646</p>
+				<div class = "headerMenu">
+					<ul class = "navMenu">
+							<li>
+								<a onclick="section(1)">Domov</a>
+							</li>						
+							<li>
+								<a onclick="section(2)">O nás</a>
+							</li>
+							<li>
+								<a onclick="section(3)">Pivovar</a>
+							</li>
+							<li>
+								<a onclick="section(4)">Prenájom</a>
+							</li>
+							<li>
+								<a onclick="section(5)">Naše pivá</a>
+							</li>
+							<li>
+								<a onclick="section(6)">Kontakt</a>
+							</li>
+					</ul>
 				</div>
-				<a id = "menuMobileIcon" onclick = "showMenuMobile()">
-					<img src="images/icons/ic_menu_black_24px.svg">
-				</a>
-				<a id = "closeMenuMobileIcon" onclick = "hideMenuMobile()">
-					<img src="images/icons/ic_close_black_24px.svg">
-				</a>
+			
 			</div>
-			<div class = "headerMenu">
-				<ul class = "navMenu">
+			<div class="about" id = "section-1">
+				<div class = "aboutContent">
+					<img src="images/about.png">
+					<p>To najlepšie <br>čo v pive máme</p>
+					<a onclick="section(3)">O pivovare</a>
+				</div>
+				<div class = "bottle">
+					<img src="images/bottle.png">
+				</div>
+			</div>
+			<div class="pivovar" id = "section-2">
+				<div class = "pivovarContent">
+					<img src="images/sudy.png">
+				</div>
+				<div class = "pivovarText">
+					<h2>Domáci pivovar <br>z kráľovského mesta.</h2>
+					<div class = "divider"></div>
+					<p>Slobodné kráľovské mesto Bardejov a jeho okolie skrýva veľa prírodného pokladu. Široké polia vhodné na pestovanie jačmeňa a číra pramenitá voda, ktorá uhasí smädný krk. Aj preto prišiel nápad vytvoriť jedinečný pivovar práve v tejto priam kráľovskej lokalite Slovenska. Domáci pivovar <strong>Brew Klan</strong> je spojením špičkovej technológie a najlepších ingrediencií pre varenie najlepšieho zlatistého moku široko ďaleko. Využite našu technológiu a vaše majstrovstvo!</p>
+					<a onclick="section(5)">Kontaktujte nás</a>
+				</div>
+			</div>
+			<div class = "pivovarGallery" id = "section-3">
+				<h2>Pivovár <br class = "hideDesktop">Brew klan</h2>
+				<div class = "divider"></div>
+				<div class = "galeriaContent">
+					<div class = "galleryTypes" >
+						<div class = "galleryType" onclick="openHalaModal()">
+							<img src="images/1.png">
+							<div class = "galleryHover">
+								<p>Zo skladu</p>
+							</div>
+						</div>
+
+						<div class = "galleryType"  onclick="openVyrobaModal()">
+							<img src="images/2.png">
+							<div class = "galleryHover">
+								<p>Z výroby</p>
+							</div>
+						</div>
+						<div class = "galleryType" onclick="openAkcieModal()">
+							<img src="images/3.png">
+							<div class = "galleryHover">
+								<p>Z akcií</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "lease" id = "section-4">
+				<div class = "leaseContent">
+					<img src="images/prenajom.png">
+				</div>
+				<div class = "leaseText">
+					<h2>Prenájom pivovaru</h2>
+					<div class = "divider"></div>
+					<p>Viete výborný recept na pivo ale nemáte technológiu na varenie? Pivovar <strong>Brew Klan</strong> Vám ponúka prenájom priestorov pivovaru, kde si môžete s kamarátmi v kruhu rodiny alebo aj sám uvariť vlastný odvar jedinečného piva. Všetky potrebné veci na výrobu piva nájdete priamo u nás. So sebou zoberiete len svoj jedinečný recept a Vaše zručnosti pre vytvorenie toho najlepšieho piva.<br><br>Napíšte nám a obratom dostanete cenovú ponuku na prenájom pivovaru. </p>
+					<a onclick="section(5)">CHCEM CENOVÚ PONUKU</a>
+				</div>
+			</div>
+			<div class= "pivovarItems" id = "section-5">
+				<h2>Ponuka <br class = "hideDesktop">Brew klan</h2>
+				<div class = "itemsHolder">
+					<div class = "pivovarItem">
+						<img src="images/item1.png">
+						<p class = "brewklan">BREW KLAN</p>
+						<p class = "itemName">SVETLÝ LEŽIAK 10%</p>
+						<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+					</div>
+					<div class = "pivovarItem">
+						<img src="images/item2.png">
+						<p class = "brewklan">BREW KLAN</p>
+						<p class = "itemName">SVETLÝ LEŽIAK 12%</p>
+						<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+					</div>
+					<div class = "pivovarItem">
+						<img src="images/item3.png">
+						<p class = "brewklan">BREW KLAN</p>
+						<p class = "itemName">NEPASTERIZOVANÝ ŠPECIÁL</p>
+						<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
+					</div>
+				</div>
+			</div>
+			<div class = "footer" id = "section-6">
+				<div class = "footerContent">
+					<div class = "footerItem">
+						<h3>Kontakt</h3>
+						<p>MALT BJ s.r.o</p>
+						<p>J. Grešáka 22, </p>
+						<p>085 01 Bardejov</p>
+						<p>Slovenská republika</p>
+						<p style="margin-top: 35px;">Tel: <strong>+421 908 994 098</strong></p>
+						<p style="margin-bottom: 70px;">E-Mail: <strong>maltbjsro@gmail.com</strong></p>
+					</div>
+					<div class = "footerItem">
+						<h3>Sociálne siete</h3>
+						<p>Sledujte nás na sociálnych sieťach,<br>kde nájdete všetky informácie.</p>
+						<a style="margin-left: 80px;position: relative;top: 30px;" target="_blank" href="https://www.facebook.com/Kamenn%C3%BD-dvor-Kola%C4%8Dkov-298351843587310/"><i class="fa fa-facebook fa-2x" style="color:#a08c68"></i></a>
+					</div>
+					<div class = "footerItem" >
+						<div class = "footerLogo">
+							<img src="images/icons/footerlogo.png">
+						</div>
+						<div class = "footerEU">
+							<img src="images/icons/eu.png">
+						</div>
+						<p class="thanksEU">TENTO PRODUKT SA REALIZOVAL<BR> S PODPOROU EURÓPSKEJ ÚNIE.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id = "menuMobile">
+				<ul class = "navMenuMobile">
 						<li>
-							<a onclick="section(1)">Domov</a>
+							<a onclick="sectionMobile(1)">Domov</a>
 						</li>						
 						<li>
-							<a onclick="section(2)">O nás</a>
+							<a onclick="sectionMobile(2)">O nás</a>
 						</li>
 						<li>
-							<a onclick="section(3)">Pivovar</a>
+							<a onclick="sectionMobile(3)">Pivovar</a>
 						</li>
 						<li>
-							<a onclick="section(4)">Naše pivá</a>
+							<a onclick="sectionMobile(4)">Prenájom</a>
 						</li>
 						<li>
-							<a onclick="section(5)">Kontakt</a>
+							<a onclick="sectionMobile(5)">Naše pivá</a>
+						</li>
+						<li>
+							<a onclick="sectionMobile(6)">Kontakt</a>
 						</li>
 				</ul>
 			</div>
-		
 		</div>
-		<div class="about" id = "section-1">
-			<div class = "aboutContent">
-				<img src="images/about.png">
-				<p>To najlepšie <br>čo v pive máme</p>
-				<a onclick="section(3)">O pivovare</a>
-			</div>
-			<div class = "bottle">
-				<img src="images/bottle.png">
-			</div>
-		</div>
-		<div class="pivovar" id = "section-2">
-			<div class = "pivovarContent">
-				<img src="images/sudy.png">
-			</div>
-			<div class = "pivovarText">
-				<h2>Domáci pivovar <br>z kráľovského mesta.</h2>
-				<div class = "divider"></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a onclick="section(5)">Kontaktujte nás</a>
-			</div>
-		</div>
-		<div class = "pivovarGallery" id = "section-3">
-			<h2>Pivovár <br class = "hideDesktop">Brew klan</h2>
-			<div class = "divider"></div>
-			<div class = "galeriaContent">
-				<div class = "galleryTypes" >
-					<div class = "galleryType" onclick="openHalaModal()">
-						<img src="images/1.png">
-						<div class = "galleryHover">
-							<p>Zo skladu</p>
-						</div>
-					</div>
-
-					<div class = "galleryType"  onclick="openVyrobaModal()">
-						<img src="images/2.png">
-						<div class = "galleryHover">
-							<p>Z výroby</p>
-						</div>
-					</div>
-					<div class = "galleryType" onclick="openAkcieModal()">
-						<img src="images/3.png">
-						<div class = "galleryHover">
-							<p>Z akcií</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class= "pivovarItems" id = "section-4">
-			<h2>Ponuka <br class = "hideDesktop">Brew klan</h2>
-			<div class = "itemsHolder">
-				<div class = "pivovarItem">
-					<img src="images/item1.png">
-					<p class = "brewklan">BREW KLAN</p>
-					<p class = "itemName">SVETLÝ LEŽIAK 10%</p>
-					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
-				</div>
-				<div class = "pivovarItem">
-					<img src="images/item2.png">
-					<p class = "brewklan">BREW KLAN</p>
-					<p class = "itemName">SVETLÝ LEŽIAK 12%</p>
-					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
-				</div>
-				<div class = "pivovarItem">
-					<img src="images/item3.png">
-					<p class = "brewklan">BREW KLAN</p>
-					<p class = "itemName">NEPASTERIZOVANÝ ŠPECIÁL</p>
-					<a class = "moreInfo">VIAC INFORMÁCIÍ</a>
-				</div>
-			</div>
-		</div>
-		<div class = "footer" id = "section-5">
-			<div class = "footerContent">
-				<div class = "footerItem">
-					<h3>Kontakt</h3>
-					<p>MALT BJ s.r.o</p>
-					<p>J. Grešáka 22, </p>
-					<p>085 01 Bardejov</p>
-					<p>Slovenská republika</p>
-					<p style="margin-top: 35px;">Tel: <strong>+421 908 994 098</strong></p>
-					<p style="margin-bottom: 70px;">E-Mail: <strong>maltbjsro@gmail.com</strong></p>
-				</div>
-				<div class = "footerItem">
-					<h3>Sociálne siete</h3>
-					<p>Sledujte nás na sociálnych sieťach,<br>kde nájdete všetky informácie.</p>
-					<a style="margin-left: 80px;position: relative;top: 30px;" target="_blank" href="https://www.facebook.com/Kamenn%C3%BD-dvor-Kola%C4%8Dkov-298351843587310/"><i class="fa fa-facebook fa-2x" style="color:#a08c68"></i></a>
-				</div>
-				<div class = "footerItem" >
-					<div class = "footerLogo">
-						<img src="images/icons/footerlogo.png">
-					</div>
-					<div class = "footerEU">
-						<img src="images/icons/eu.png">
-					</div>
-					<p class="thanksEU">TENTO PRODUKT SA REALIZOVAL<BR> S PODPOROU EURÓPSKEJ ÚNIE.</p>
-				</div>
-			</div>
-		</div>
-
-		<div id = "menuMobile">
-			<ul class = "navMenuMobile">
-					<li>
-						<a onclick="sectionMobile(1)">Domov</a>
-					</li>						
-					<li>
-						<a onclick="sectionMobile(2)">O nás</a>
-					</li>
-					<li>
-						<a onclick="sectionMobile(3)">Pivovar</a>
-					</li>
-					<li>
-						<a onclick="sectionMobile(4)">Naše pivá</a>
-					</li>
-					<li>
-						<a onclick="sectionMobile(5)">Kontakt</a>
-					</li>
-			</ul>
-		</div>
-
 	<script src="js/brewklan.js"></script>
 	<script src="js/lightslider.js"></script>
 	</body>
